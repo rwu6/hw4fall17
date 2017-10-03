@@ -8,7 +8,7 @@
 
   %body
     %h1.title Rotten Potatoes!
-    %button sign up&Login
+    %button sign up&Login <%= button_to "users", action:"users" %>
     #main
       - if flash[:notice]
         #notice.message= flash[:notice]
